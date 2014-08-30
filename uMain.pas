@@ -233,15 +233,18 @@ end;
 
 function TextVozr(n: Integer): string;
 var
-  i: Integer;
+  i,j: Integer;
 begin
   Result:=IntToStr(n);
   i:= n mod 10;
+  j:= n mod 100;
   if n<0 then begin
     Result:='ѕо€витс€ на свет через '+IntToStr(Abs(n));
     i:=-i;
+    j:=-j;
   end;
-  if i=1 then Result:=Result+' год'
+  if (j>10) and (j<15) then Result:=Result+' лет'
+  else if i=1 then Result:=Result+' год'
   else if (i>1) and (i<5) then Result:=Result+' года'
   else Result:=Result+' лет'
 end;
