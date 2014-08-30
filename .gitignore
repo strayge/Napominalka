@@ -1,0 +1,9 @@
+*.zip
+data - копия.txt
+Copy of data.txt
+*.dcu
+*.ddp
+
+# Windows image file caches
+Thumbs.db
+
