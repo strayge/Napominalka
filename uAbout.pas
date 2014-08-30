@@ -32,7 +32,7 @@ var
 const
   sEgg    = 'STRAY';  //слово для пасхалки
   iEggLen = Length(sEgg);
-  VERSION = '0.2.1';
+  VERSION = '0.3.0';
 
 implementation
 

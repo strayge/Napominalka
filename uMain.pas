@@ -297,7 +297,12 @@ begin
         OutText(todayLine);
         TextShowed:=True;
       end;
-      OutText(A[i].T+' - '+TextVozr(nowY-A[i].Y));
+      if A[i].Y=0 then begin
+        OutText(A[i].T);
+      end
+      else begin
+        OutText(A[i].T+' - '+TextVozr(nowY-A[i].Y));
+      end;
     end
   end;
   if TextShowed=True then OutText(textSeparator);
@@ -324,7 +329,12 @@ begin
           OutText(tempStr);
         end;
         FirstTextShowed:=true;
-        OutText(A[i].T+' - '+TextVozr(localY-A[i].Y));
+        if A[i].Y=0 then begin
+          OutText(A[i].T);
+        end
+        else begin
+          OutText(A[i].T+' - '+TextVozr(localY-A[i].Y));
+        end;
         EndTextShowing:= True;
       end;
     end;
