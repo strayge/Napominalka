@@ -3,6 +3,8 @@ data - копия.txt
 Copy of data.txt
 *.dcu
 *.ddp
+data.txt
+settings.ini
 
 # Windows image file caches
 Thumbs.db
